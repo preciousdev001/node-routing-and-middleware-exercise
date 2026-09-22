@@ -17,7 +17,7 @@ class Item {
 
   //  update found item w/matching name to data
   static update(name, data) {
-    let foundItem = items.find(name);
+    let foundItem = Item.find(name);
     if (foundItem === undefined) {
       throw { message: "Not Found", status: 404 };
     }
